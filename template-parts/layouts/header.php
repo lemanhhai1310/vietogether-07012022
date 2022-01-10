@@ -20,6 +20,7 @@
 </head>
 <body class="<?= (isset($body))?$body:'' ?>">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
+<?php require "template-parts/data.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 <div class="header__bannderAds uk-position-z-index uk-position-relative">
@@ -27,7 +28,7 @@
         <a href=""><img class="uk-width-1-1" src="images/BannerAds.png" alt=""></a>
     </div>
 </div>
-<div class="header uk-background-default" uk-sticky>
+<div class="header uk-background-default" uk-sticky="animation: uk-animation-slide-top;top: 600">
     <div class="header__top uk-visible@m">
         <div class="uk-container uk-padding-remove">
             <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>

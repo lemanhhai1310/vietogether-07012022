@@ -1,6 +1,9 @@
 .header{
   z-index: 301;
   position: relative;
+  &.uk-sticky-below{
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  }
   &__bannderAds{
     z-index: 301;
   }
@@ -8,6 +11,9 @@
     max-width: calc(#{$w-container} + 30px);
   }
   &__top{
+    .uk-sticky-fixed &{
+      display: none;
+    }
     .uk-navbar-item{
       min-height: 60px;
     }

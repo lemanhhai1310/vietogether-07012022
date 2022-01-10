@@ -1,0 +1,100 @@
+.home{
+  &__section{
+    padding-top: 0;
+    @include media-breakpoint-up('m'){
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+    &__dotnav{
+      >li{
+        >a{
+          border: 1px solid #286DBF;
+          box-sizing: border-box;
+          width: 10px;
+          height: 10px;
+          border-radius: 0;
+          &:hover{
+            background: #286DBF;
+          }
+        }
+        &.uk-active{
+          >a{
+            background: #286DBF;
+          }
+        }
+      }
+    }
+    &__title1{
+      letter-spacing: 0.05em;
+      color: #333333;
+      @extend .fz-24;
+      font-family: $font-Montserrat-Bold;
+      a{
+        color: #333333;
+      }
+    }
+    &__txt{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #707070;
+      font-family: $font-Poppins-Regular;
+    }
+    &__title2{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #333333;
+      font-family: $font-Montserrat-Bold;
+      margin: 0;
+      a{
+        color: #333333;
+      }
+    }
+    &__boxSlider{
+      margin-left: -15px;
+      margin-right: -15px;
+      @include media-breakpoint-up('m'){
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .uk-slidenav{
+        //top: 265px;
+        //top: 130px;
+        @include fluidx(265px,130px,top);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 900;
+        svg{
+          opacity: 0;
+        }
+        &.uk-slidenav-previous{
+          background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='30' height='30' rx='5' transform='matrix(-1 0 0 1 30 0)' fill='white'/%3E%3Cpath d='M16.293 20.707L10.586 15L16.293 9.29297L17.707 10.707L13.414 15L17.707 19.293L16.293 20.707Z' fill='%23707070'/%3E%3C/svg%3E%0A");
+        }
+        &.uk-slidenav-next{
+          background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='30' height='30' rx='5' fill='white'/%3E%3Cpath d='M13.707 20.707L19.414 15L13.707 9.29297L12.293 10.707L16.586 15L12.293 19.293L13.707 20.707Z' fill='%23707070'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    &__box1{
+      @include media-breakpoint-up('m'){
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &__categore{
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      @extend .fz-14;
+      font-family: $font-Poppins-Regular;
+      margin-bottom: 7px;
+      a{
+        color: #286DBF;
+      }
+    }
+    &__txtSmall{
+      letter-spacing: 0.05em;
+      @extend .fz-12;
+      color: #707070;
+      font-family: $font-Poppins-Regular;
+    }
+  }
+}

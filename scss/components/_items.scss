@@ -1,0 +1,33 @@
+.item{
+  $x:120;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+
+      .home__section &{
+        margin-top: 30px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
+  $x:80;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:40;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:10;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+}
