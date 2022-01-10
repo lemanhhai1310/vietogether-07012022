@@ -1,4 +1,6 @@
 .header{
+  z-index: 301;
+  position: relative;
   &__bannderAds{
     z-index: 301;
   }
@@ -67,6 +69,10 @@
   }
   &__center{
     z-index: 301;
+    border-bottom: 1px solid #EBEBEB;
+    @include media-breakpoint-up('m'){
+      border: none;
+    }
     .uk-navbar-toggle,
     .uk-navbar-item{
       min-height: 60px;
@@ -80,6 +86,12 @@
         @include media-breakpoint-up('m'){
           height: 50px;
         }
+      }
+    }
+    &__navItemMobile{
+      padding: 0 10px;
+      &--signIn{
+        padding-right: 15px;
       }
     }
     &__formSearchDropdown{
@@ -215,5 +227,6 @@
   top: 0;
   z-index: 300;
   display: none;
+  padding: 0;
   background: rgba(0, 0, 0, 0.4);
 }

@@ -27,7 +27,7 @@
         <a href=""><img class="uk-width-1-1" src="images/BannerAds.png" alt=""></a>
     </div>
 </div>
-<div class="header">
+<div class="header uk-background-default" uk-sticky>
     <div class="header__top uk-visible@m">
         <div class="uk-container uk-padding-remove">
             <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
@@ -47,7 +47,7 @@
             </nav>
         </div>
     </div>
-    <div class="header__center uk-background-default uk-position-z-index uk-position-relative">
+    <div class="header__center uk-position-z-index uk-position-relative">
         <div class="uk-container uk-padding-remove">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-left">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="uk-navbar-right">
                     <div>
-                        <a class="uk-navbar-toggle uk-hidden@m" href="#" uk-search-icon></a>
+                        <a class="header__center__navItemMobile uk-navbar-toggle uk-hidden@m" href="#" uk-search-icon></a>
                         <div class="uk-navbar-dropdown header__center__formSearchDropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
 
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -81,8 +81,8 @@
 
                         </div>
                     </div>
-                    <a class="uk-navbar-toggle uk-hidden@m" uk-icon="icon: user" href="#"></a>
-                    <a class="uk-navbar-toggle uk-hidden@m" uk-icon="icon: sign-in" href="#"></a>
+                    <a class="header__center__navItemMobile uk-navbar-toggle uk-hidden@m" uk-icon="icon: user" href="#"></a>
+                    <a class="header__center__navItemMobile header__center__navItemMobile--signIn uk-navbar-toggle uk-hidden@m" uk-icon="icon: sign-in" href="#"></a>
                     <div class="uk-navbar-item uk-visible@m">
                         <a href="" class="header__center__linkTxt header__center__linkTxt--register">Đăng Ký</a>
                     </div>

@@ -1,0 +1,42 @@
+.footer{
+  &__top{
+    background: #F8F8FB;
+    &__title{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #23304C;
+      font-family: $font-Poppins-SemiBold;
+    }
+    &__txt1{
+      @extend .footer__top__txt2;
+      font-family: $font-Poppins-Medium;
+    }
+    &__txt2{
+      letter-spacing: 0.05em;
+      color: #444F68;
+      @extend .fz-15;
+    }
+    .uk-nav{
+      >li{
+        >a{
+          color: #444F68;
+          @extend .fz-15;
+          letter-spacing: 0.05em;
+          font-family: $font-Poppins-Regular;
+        }
+      }
+    }
+  }
+  &__bottom{
+    @include media-breakpoint-up('m'){
+      min-height: 80px;
+      box-sizing: border-box;
+    }
+    &__txtCopyRight{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #444F68;
+      font-family: $font-Poppins-Regular;
+    }
+  }
+}
