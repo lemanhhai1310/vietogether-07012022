@@ -43,7 +43,10 @@
                                                             </div>
                                                         </div>
                                                         <div>
-                                                            <div class="home__section__txtSmall">19 Thg 8, 2021</div>
+                                                            <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">250 Lượt Xem</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -112,7 +115,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-30-m" uk-grid>
+                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-30-m uk-grid-match" uk-grid>
                         <?php
                         shuffle($dataNews);
                         foreach ($dataNews as $k=>$v): ?>
@@ -147,7 +150,7 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div class="home__section__txtSmall">19 Thg 8, 2021</div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
                                                 </div>
                                             </div>
                                         </div>
