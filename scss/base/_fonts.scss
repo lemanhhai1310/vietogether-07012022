@@ -1,5 +1,24 @@
 /**
  * --------------------------------------------------------------------
+ * Poppins
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'Poppins Regular';
+  font-display: auto;
+  src:local('Poppins Regular'), url('fonts/font-poppins/Poppins-Regular.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Poppins SemiBold';
+  font-display: auto;
+  src:local('Poppins SemiBold'), url('fonts/font-poppins/Poppins-SemiBold.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Arial
  * --------------------------------------------------------------------
  */
