@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Vietogethers - <?= /** @var TYPE_NAME  */
+    <title>Vietogether - <?= /** @var TYPE_NAME  */
         (isset($data['title'])) ? $data['title'] : ''; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
@@ -35,7 +35,7 @@
 
                 <div class="uk-navbar-left">
                     <div class="uk-navbar-item">
-                        <a href="" class="header__top__btn header__top__btn--store uk-button uk-button-primary"><span>Ghé Thăm Vietogethers Store</span></a>
+                        <a href="" class="header__top__btn header__top__btn--store uk-button uk-button-primary"><span>Ghé Thăm Vietogether Store</span></a>
                     </div>
                 </div>
 
@@ -109,7 +109,7 @@
                         <li><a href="#">Trải Nghiệm</a></li>
                         <li><a href="#">Video</a></li>
                         <li><a href="#">Podcast</a></li>
-                        <li><a href="#">Cafe Vietogethers</a></li>
+                        <li><a href="#">Cafe Vietogether</a></li>
                     </ul>
 
                 </div>

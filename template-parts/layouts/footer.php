@@ -3,7 +3,7 @@
         <div class="uk-container">
             <div class="uk-child-width-1-4@m" uk-grid>
                 <div class="uk-width-1-4@m">
-                    <div><img src="images/Vietogethers2.png" alt=""></div>
+                    <div><img src="images/Vietogether2.png" alt=""></div>
                     <ul class="uk-list">
                         <li>
                             <div class="footer__top__txt1">Hotline</div>
@@ -11,7 +11,7 @@
                         </li>
                         <li>
                             <div class="footer__top__txt1">Email</div>
-                            <div class="footer__top__txt2">Vietogethers@mail.com</div>
+                            <div class="footer__top__txt2">Vietogether@mail.com</div>
                         </li>
                         <li>
                             <div class="footer__top__txt1">Address</div>
@@ -88,7 +88,7 @@
                             </div>
                         </li>
                         <li>
-                            <a class="uk-accordion-title" href="#">Cafe Vietogethers</a>
+                            <a class="uk-accordion-title" href="#">Cafe Vietogether</a>
                             <div class="uk-accordion-content">
                                 <ul class="uk-nav uk-nav-default">
                                     <li><a href="#">Doanh nghiệp</a></li>
@@ -168,7 +168,7 @@
                     </ul>
                 </div>
                 <div class="uk-width-1-4@m uk-width-1-2">
-                    <h4 class="uk-h4 footer__top__title">Cafe Vietogethers</h4>
+                    <h4 class="uk-h4 footer__top__title">Cafe Vietogether</h4>
                     <ul class="uk-nav uk-nav-default">
                         <li><a href="#">Doanh nghiệp</a></li>
                         <li><a href="#">Khởi nghiệp</a></li>
