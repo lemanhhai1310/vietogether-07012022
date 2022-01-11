@@ -29,6 +29,7 @@
       color: #333333;
       @extend .fz-24;
       font-family: $font-Montserrat-Bold;
+      margin: 0;
       a{
         color: #333333;
       }
@@ -48,6 +49,31 @@
       a{
         color: #333333;
       }
+    }
+    &__boxOverlay{
+      background: linear-gradient(3.11deg, #000000 2.42%, rgba(0, 0, 0, 0) 97.29%);
+      height: 83%;
+    }
+    &__title4{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      font-family: $font-Poppins-SemiBold;
+      margin: 0;
+      a{
+        color: #ffffff;
+      }
+    }
+    &__title3{
+      margin: 0;
+      letter-spacing: 0.05em;
+      @extend .fz-30;
+      color: #111111;
+      font-family: $font-Montserrat-Bold;
+      text-transform: capitalize;
+      padding-left: 19px;
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='22' viewBox='0 0 10 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' width='2' height='22' fill='%23286DBF'/%3E%3Crect x='4' width='2' height='22' fill='%23286DBF'/%3E%3Crect width='2' height='22' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center left;
     }
     &__boxSlider{
       margin-left: -15px;
