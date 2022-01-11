@@ -1,6 +1,11 @@
 .footer{
   &__top{
     background: #F8F8FB;
+    &__accordion{
+      .uk-accordion-title{
+        @extend .footer__top__title;
+      }
+    }
     &__title{
       letter-spacing: 0.05em;
       @extend .fz-16;

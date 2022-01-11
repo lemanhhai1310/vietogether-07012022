@@ -30,8 +30,14 @@
       @extend .fz-24;
       font-family: $font-Montserrat-Bold;
       margin: 0;
+      .home__section__box2 &{
+        color: #ffffff;
+      }
       a{
         color: #333333;
+        .home__section__box2 &{
+          color: #ffffff;
+        }
       }
     }
     &__txt{
@@ -106,6 +112,80 @@
         padding-right: 0;
       }
     }
+    &__card{
+      background: #F8F8FB;
+      padding: 15px;
+      @include media-breakpoint-up('m'){
+        min-height: 309px;
+      }
+      &__title{
+        letter-spacing: 0.05em;
+        @extend .fz-12;
+        font-family: $font-Montserrat-Bold;
+        color: #333333;
+      }
+      &__input{
+        @extend .fz-12;
+        font-family: $font-Poppins-Regular;
+        letter-spacing: 0.05em;
+        &::placeholder{
+          color: #EBEBEB;
+        }
+        &:not(:focus){
+          border-color: #EBEBEB;
+        }
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        $x:15px;
+        padding-top: #{$x};
+        margin-top: #{$x};
+        border-top: 1px solid #EBEBEB;
+        @include media-breakpoint-up('m'){
+          $x:30px;
+          padding-top: #{$x};
+          margin-top: #{$x};
+        }
+      }
+    }
+    &__box3{
+      background: #0E266A;
+      @include media-breakpoint-up('m'){
+        padding: 20px;
+      }
+      &__title{
+        letter-spacing: 0.05em;
+        @extend .fz-16;
+        font-family: $font-Montserrat-Bold;
+        color: #FFFFFF;
+        margin: 0;
+      }
+    }
+    &__box2{
+      min-height: 100%;
+      background: linear-gradient(3.11deg, #000000 2.42%, rgba(0, 0, 0, 0) 97.29%);
+      @include media-breakpoint-up('m'){
+        padding: 28px 20px;
+        min-height: 100%;
+      }
+    }
+    &__iconPlay{
+      width: 40px;
+      @include media-breakpoint-up('m'){
+        width: 80px;
+      }
+      display: flex;
+      &:before{
+        content: "";
+        width: 100%;
+        padding-top: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle opacity='0.6' cx='40' cy='40' r='40' fill='white'/%3E%3Ccircle cx='40' cy='40' r='30' fill='white'/%3E%3Cpath d='M34.666 30V50L51.3327 40L34.666 30Z' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+      }
+    }
     &__categore{
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -120,6 +200,12 @@
       letter-spacing: 0.05em;
       @extend .fz-12;
       color: #707070;
+      font-family: $font-Poppins-Regular;
+    }
+    &__linkAll{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #286DBF;
       font-family: $font-Poppins-Regular;
     }
   }
