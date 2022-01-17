@@ -16,6 +16,13 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+
+      .danhmuclon__section &{
+        margin-top: 0px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
     }
   }
   $x:40;

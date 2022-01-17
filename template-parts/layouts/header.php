@@ -53,7 +53,7 @@
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-left">
                     <a class="uk-navbar-toggle header__center__iconMenu uk-hidden@m" uk-navbar-toggle-icon href=""></a>
-                    <a href="" class="uk-navbar-item uk-logo uk-hidden@m uk-padding-remove"><img src="images/Vietogetherlogo.png" alt=""></a>
+                    <a href="." class="uk-navbar-item uk-logo uk-hidden@m uk-padding-remove"><img src="images/Vietogetherlogo.png" alt=""></a>
                     <div class="uk-navbar-item uk-visible@m">
                         <div class="header__center__linkTxt">Wed, August 25, 2021</div>
                     </div>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="uk-navbar-center">
-                    <a href="" class="uk-navbar-item uk-logo uk-visible@m"><img src="images/Vietogetherlogo.png" alt=""></a>
+                    <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img src="images/Vietogetherlogo.png" alt=""></a>
                 </div>
                 <div class="uk-navbar-right">
                     <div>
@@ -102,14 +102,14 @@
                 <div class="uk-navbar-left">
 
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">Kinh Doanh</a></li>
-                        <li><a href="#">Đời Sống</a></li>
-                        <li><a href="#">Du Lịch</a></li>
-                        <li><a href="#">Sáng Tạo</a></li>
-                        <li><a href="#">Trải Nghiệm</a></li>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Podcast</a></li>
-                        <li><a href="#">Cafe Vietogether</a></li>
+                        <li class="uk-active"><a href="danhmuclon.php">Kinh Doanh</a></li>
+                        <li><a href="danhmuclon.php">Đời Sống</a></li>
+                        <li><a href="danhmuclon.php">Du Lịch</a></li>
+                        <li><a href="danhmuclon.php">Sáng Tạo</a></li>
+                        <li><a href="danhmuclon.php">Trải Nghiệm</a></li>
+                        <li><a href="danhmuclon.php">Video</a></li>
+                        <li><a href="danhmuclon.php">Podcast</a></li>
+                        <li><a href="danhmuclon.php">Cafe Vietogether</a></li>
                     </ul>
 
                 </div>
