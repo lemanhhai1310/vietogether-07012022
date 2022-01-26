@@ -14,6 +14,20 @@
       margin-left: 0;
       margin-right: 0;
     }
+    .uk-navbar-nav{
+      >li{
+        &.uk-active{
+          >a{
+            color: #286DBF;
+          }
+        }
+        >a{
+          &:hover{
+            color: #286DBF;
+          }
+        }
+      }
+    }
   }
   &__navbar{
     .uk-navbar-left{

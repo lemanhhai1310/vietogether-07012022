@@ -1,0 +1,61 @@
+.danhmuccon{
+  &__item{
+    &:nth-child(n+2){
+      margin-top: 15px;
+    }
+  }
+  &__itemRight{
+    &:nth-child(n+2){
+      margin-top: 20px;
+      @include media-breakpoint-up('m'){
+        margin-top: 60px;
+      }
+    }
+  }
+  &__title1{
+    letter-spacing: 0.05em;
+    @extend .fz-20;
+    color: #333333;
+    font-family: $font-Montserrat-Bold;
+    margin-bottom: 17px;
+    padding-left: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='14' viewBox='0 0 10 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' width='2' height='14' fill='%23286DBF'/%3E%3Crect x='4' width='2' height='14' fill='%23286DBF'/%3E%3Crect width='2' height='14' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  &__title2{
+    letter-spacing: 0.05em;
+    @extend .fz-16;
+    color: #333333;
+    font-family: $font-Montserrat-Bold;
+    margin-bottom: 10px;
+  }
+  &__txt{
+    letter-spacing: 0.05em;
+    @extend .fz-16;
+    color: #707070;
+    font-family: $font-Poppins-Regular;
+  }
+  &__nav{
+    >li{
+      >a{
+        letter-spacing: 0.05em;
+        @extend .fz-15;
+        padding: 10px 0;
+        &:not(:hover){
+          //color: #707070;
+        }
+      }
+    }
+  }
+  &__title{
+    letter-spacing: 0.05em;
+    @extend .fz-16;
+    color: #333333;
+    font-family: $font-Montserrat-Bold;
+    margin: 0;
+    a{
+      color: #333333;
+    }
+  }
+}
