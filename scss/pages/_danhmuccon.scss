@@ -6,7 +6,7 @@
   }
   &__itemRight{
     &:nth-child(n+2){
-      margin-top: 20px;
+      margin-top: 30px;
       @include media-breakpoint-up('m'){
         margin-top: 60px;
       }
@@ -28,7 +28,7 @@
     @extend .fz-16;
     color: #333333;
     font-family: $font-Montserrat-Bold;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
   }
   &__txt{
     letter-spacing: 0.05em;
@@ -42,6 +42,9 @@
         letter-spacing: 0.05em;
         @extend .fz-15;
         padding: 10px 0;
+        @include media-breakpoint-up('m'){
+          padding: 20px 0;
+        }
         &:not(:hover){
           //color: #707070;
         }
