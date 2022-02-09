@@ -21,6 +21,7 @@
                                         <div class="uk-cover-container">
                                             <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                             <canvas width="420" height="323"></canvas>
+                                            <a href="" class="uk-position-cover"></a>
                                         </div>
                                     </div>
                                     <div class="danhmuccon__item uk-flex-auto">
