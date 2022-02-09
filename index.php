@@ -21,6 +21,7 @@
                                             <div class="uk-cover-container">
                                                 <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                                 <canvas width="870" height="530"></canvas>
+                                                <a href="" class="uk-position-cover"></a>
                                             </div>
                                             <div class="uk-padding-small home__section__box1">
                                                 <div class="item__20">
@@ -81,6 +82,7 @@
                                         <div class="uk-cover-container">
                                             <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                             <canvas width="113" height="87"></canvas>
+                                            <a href="" class="uk-position-cover"></a>
                                         </div>
                                     </div>
                                     <div class="uk-width-expand">
@@ -130,6 +132,7 @@
                                     <div class="uk-cover-container">
                                         <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                         <canvas width="195" height="150"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
                                     </div>
                                 </div>
                                 <div class="uk-width-expand">
@@ -189,6 +192,7 @@
                                                 <div class="uk-cover-container">
                                                     <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                                     <canvas width="308" height="237"></canvas>
+                                                    <a href="" class="uk-position-cover"></a>
                                                 </div>
                                             </div>
                                             <div class="uk-width-expand">
@@ -339,6 +343,7 @@
                             <div class="uk-cover-container">
                                 <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                 <canvas width="616" height="474"></canvas>
+                                <a href="" class="uk-position-cover"></a>
                             </div>
                         </div>
                         <div class="item__15">
@@ -535,6 +540,7 @@
                                                 <div class="uk-cover-container">
                                                     <img src="<?= $v['src'] ?>" alt="" uk-cover="">
                                                     <canvas width="308" height="237"></canvas>
+                                                    <a href="" class="uk-position-cover"></a>
                                                 </div>
                                             </div>
                                             <div class="uk-width-expand">
