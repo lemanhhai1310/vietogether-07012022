@@ -23,6 +23,12 @@
 <?php require "template-parts/data.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+<div id="offcanvas-flip-menu" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+    </div>
+</div>
 <div class="header__bannderAds uk-position-z-index uk-position-relative">
     <div class="uk-container uk-padding-remove">
         <a href=""><img class="uk-width-1-1" src="images/BannerAds.png" alt=""></a>
@@ -52,7 +58,7 @@
         <div class="uk-container uk-padding-remove">
             <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                 <div class="uk-navbar-left">
-                    <a class="uk-navbar-toggle header__center__iconMenu uk-hidden@m" uk-navbar-toggle-icon href=""></a>
+                    <a class="uk-navbar-toggle header__center__iconMenu uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-flip-menu" uk-toggle></a>
                     <a href="." class="uk-navbar-item uk-logo uk-hidden@m uk-padding-remove"><img src="images/Vietogetherlogo.png" alt=""></a>
                     <div class="uk-navbar-item uk-visible@m">
                         <div class="header__center__linkTxt">Wed, August 25, 2021</div>
@@ -104,7 +110,25 @@
                     <ul class="uk-navbar-nav">
                         <li class="uk-active"><a href="danhmuclon.php">Kinh Doanh</a></li>
                         <li><a href="danhmuclon.php">Đời Sống</a></li>
-                        <li><a href="danhmuclon.php">Du Lịch</a></li>
+                        <li>
+                            <a href="danhmuclon.php">Du Lịch</a>
+                            <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove uk-dropdown uk-dropdown-bottom-left" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 300" style="left: 0px; top: 100px;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">Đại học</a></li>
+                                    <li><a href="#">Cao học</a></li>
+                                    <li><a href="#">Nghiên cứu sinh</a></li>
+                                    <li><a href="#">Vừa làm vừa học</a></li>
+                                    <li>
+                                        <a href="#" aria-expanded="false" class="">Văn bằng 2</a>
+                                        <ul class="uk-nav uk-navbar-dropdown-nav uk-dropdown uk-dropdown-right-top" uk-dropdown="pos: right-top; animation: uk-animation-slide-bottom-small; duration: 300" style="left: 250px; top: 0px;">
+                                            <li><a href="dautuduan-kehoachdauthau.php">Kế hoạch đấu thầu</a></li>
+                                            <li><a href="#">Thông báo mời thầu</a></li>
+                                            <li><a href="#">Kết quả lựa chọn nhà thầu</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="danhmuclon.php">Sáng Tạo</a></li>
                         <li><a href="danhmuclon.php">Trải Nghiệm</a></li>
                         <li><a href="danhmuclon.php">Video</a></li>
@@ -122,18 +146,16 @@
                         </form>
                     </div>
                     <div class="uk-navbar-item">
-                        <div uk-form-custom="target: > * > span:first-child">
-                            <select>
-                                <option value="">Tiếng Việt</option>
-                                <option value="1">Option 01</option>
-                                <option value="2">Option 02</option>
-                                <option value="3">Option 03</option>
-                                <option value="4">Option 04</option>
-                            </select>
-                            <button class="header__bottom__selectLang uk-button uk-button-default" type="button" tabindex="-1">
-                                <span></span>
-                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
-                            </button>
+                        <div class="uk-position-relative">
+                            <div class="header__top__flag">
+                                <span>Tiếng Việt</span>
+                            </div>
+                            <div class="uk-padding-small header__top__dropFlag" uk-dropdown="mode: click">
+                                <ul class="uk-nav">
+                                    <li class="uk-active"><a href="" style="--background: url('images/230px-Flag_of_North_Vietnam_(1955–1976).png')">Vietnamese</a></li>
+                                    <li><a href="" style="--background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_the_United_States_%281847%E2%80%931848%29.svg/1200px-Flag_of_the_United_States_%281847%E2%80%931848%29.svg.png')">English</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

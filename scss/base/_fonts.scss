@@ -6,7 +6,7 @@
 @font-face{
   font-family:'Montserrat Bold';
   font-display: auto;
-  src:local('Montserrat Bold'), url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  src:url('fonts/font1/Montserrat/Montserrat-Bold.ttf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
@@ -18,21 +18,28 @@
 @font-face{
   font-family:'Poppins Regular';
   font-display: auto;
-  src:local('Poppins Regular'), url('fonts/font-poppins/Poppins-Regular.otf') format('truetype');
+  src:url('fonts/PoppinsVN-400.woff2') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
 @font-face{
   font-family:'Poppins SemiBold';
   font-display: auto;
-  src:local('Poppins SemiBold'), url('fonts/font-poppins/Poppins-SemiBold.otf') format('truetype');
-  font-weight:normal;
+  src:url('fonts/PoppinsVN-600.woff2') format('truetype');
+  font-weight:600;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Poppins Bold';
+  font-display: auto;
+  src:url('fonts/PoppinsVN-700.woff2') format('truetype');
+  font-weight:600;
   font-style:normal;
 }
 @font-face{
   font-family:'Poppins Medium';
   font-display: auto;
-  src:local('Poppins Medium'), url('fonts/font-poppins/Poppins-Medium.otf') format('truetype');
+  src:url('fonts/PoppinsVN-500.woff2') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
