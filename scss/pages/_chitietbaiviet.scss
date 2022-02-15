@@ -18,4 +18,12 @@
       }
     }
   }
+  &__item1{
+    &:nth-child(n+2){
+      margin-top: 60px;
+      @include media-breakpoint-up('m'){
+        margin-top: 100px;
+      }
+    }
+  }
 }

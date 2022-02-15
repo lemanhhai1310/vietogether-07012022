@@ -3,7 +3,7 @@
         <div class="uk-container">
             <div class="uk-child-width-1-4@m" uk-grid>
                 <div class="uk-width-1-4@m">
-                    <div><img src="images/Vietogether2.png" alt=""></div>
+                    <div><img src="images/Vietogethers2.png" alt=""></div>
                     <ul class="uk-list">
                         <li>
                             <div class="footer__top__txt1">Hotline</div>
