@@ -7,7 +7,7 @@
             <div class="uk-section-xsmall">
                 <div class="uk-child-width-auto uk-flex-middle" uk-grid>
                     <div>
-                        <ul class="uk-breadcrumb">
+                        <ul class="uk-breadcrumb chitietbaiviet__breadcrumb">
                             <li><a href="">Kinh Doanh</a></li>
                             <li><span>Doanh Nghiệp</span></li>
                         </ul>
@@ -57,7 +57,22 @@
                 <div class="item__30">
                     <div uk-grid>
                         <div class="chitietbaiviet__w1 uk-visible@m">
-
+                            <div uk-sticky="offset: 220; bottom: true;">
+                                <div class="item__30">
+                                    <a href="" uk-icon="facebook" class="chitietbaiviet__boxTool chitietbaiviet__boxTool__facebook"></a>
+                                </div>
+                                <div class="item__30">
+                                    <a href="" uk-icon="heart" class="uk-position-relative chitietbaiviet__boxTool chitietbaiviet__boxTool__heart">
+                                        <span class="uk-position-bottom-center chitietbaiviet__boxTool__counter">136</span>
+                                    </a>
+                                </div>
+                                <div class="item__30">
+                                    <a href="" uk-icon="copy" class="chitietbaiviet__boxTool chitietbaiviet__boxTool__copy"></a>
+                                </div>
+                                <div class="item__30">
+                                    <a href="" uk-icon="bookmark" class="chitietbaiviet__boxTool chitietbaiviet__boxTool__bookmark"></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="uk-width-expand">
                             <div class="item__30">
