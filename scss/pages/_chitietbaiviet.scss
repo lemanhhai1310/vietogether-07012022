@@ -1,5 +1,6 @@
 .chitietbaiviet{
   &__section{
+    padding-top: 0;
     @include media-breakpoint-up('m'){
       padding-top: 80px;
       padding-bottom: 120px;
@@ -26,11 +27,73 @@
       }
     }
   }
+  &__boxImg{
+    margin-left: -15px;
+    margin-right: -15px;
+    @include media-breakpoint-up('m'){
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &__baiviet{
+    &__title{
+      letter-spacing: 0.05em;
+      @extend .fz-36;
+      color: #333333;
+      font-family: $font-Montserrat-Bold;
+      line-height: 1.33;
+    }
+    &__desc{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #444444;
+      font-family: $font-Poppins-SemiBold;
+      line-height: 1.87;
+    }
+    &__txt{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #707070;
+      line-height: 1.87;
+    }
+    &__article{
+      p{
+        letter-spacing: 0.05em;
+        @extend .fz-16;
+        color: #707070;
+        line-height: 1.87;
+      }
+    }
+  }
   &__comment{
+    &__canvas{
+      width: 50px;
+      @include media-breakpoint-up('m'){
+        width: 83px;
+      }
+    }
     &__box1{
       border: 1px solid #EBEBEB;
       box-sizing: border-box;
-      padding: 15px;
+      padding: 10px;
+      @include media-breakpoint-up('m'){
+        padding: 15px;
+      }
+      &__name{
+        letter-spacing: 0.05em;
+        color: #707070;
+        @extend .fz-16;
+      }
+      &__reply{
+        letter-spacing: 0.05em;
+        color: #286DBF;
+        @extend .fz-16;
+      }
+      &__txt{
+        letter-spacing: 0.05em;
+        color: #707070;
+        @extend .fz-16;
+      }
     }
     &__social{
       &__icon{
@@ -64,8 +127,12 @@
     }
     &__item2{
       &:nth-child(n+2){
-        $x:20px;
+        $x:15px;
         margin-top: #{$x};
+        @include media-breakpoint-up('m'){
+          $x:20px;
+          margin-top: #{$x};
+        }
       }
     }
     &__item1{
@@ -75,7 +142,7 @@
         margin-top: #{$x};
         padding-top: #{$x};
         @include media-breakpoint-up('m'){
-          $x:30px;
+          $x:40px;
           margin-top: #{$x};
           padding-top: #{$x};
         }

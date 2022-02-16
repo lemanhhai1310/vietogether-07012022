@@ -38,6 +38,19 @@
       }
     }
   }
+  $x:30;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+
+      .chitietbaiviet__section &{
+        margin-top: 15px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
   $x:20;
   &__#{$x}{
     &:nth-child(n+2){
