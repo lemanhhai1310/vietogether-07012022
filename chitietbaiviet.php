@@ -98,7 +98,7 @@
                                         </article>
                                     </div>
                                     <div class="uk-width-2-5@m">
-                                        <aside>
+                                        <aside uk-sticky="offset: 220; bottom: true;">
                                             <div class="danhmuccon__itemRight">
                                                 <div class="item__30">
                                                     <div class="danhmuccon__title2">Bài Viết Cùng Chủ Đề</div>
