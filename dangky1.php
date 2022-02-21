@@ -27,7 +27,7 @@
                             </div>
 
                             <div class="uk-margin uk-text-center">
-                                <a href="" class="uk-button uk-button-primary dangky1__btnSubmit"><span>Tiếp Tục</span></a>
+                                <a href="dangky2.php" class="uk-button uk-button-primary dangky1__btnSubmit"><span>Tiếp Tục</span></a>
                             </div>
 
                         </fieldset>

@@ -1,0 +1,10 @@
+.dangky2{
+  &__txt{
+    letter-spacing: 0.05em;
+    @extend .fz-14;
+    color: #707070;
+    a{
+      color: #286DBF;
+    }
+  }
+}
