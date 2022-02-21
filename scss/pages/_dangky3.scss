@@ -1,0 +1,18 @@
+.dangky3{
+  &__card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    &__title{
+      letter-spacing: 0.05em;
+      @extend .fz-24;
+      font-family: $font-Poppins-Bold;
+      color: #333333;
+    }
+    &__desc{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #707070;
+    }
+  }
+}

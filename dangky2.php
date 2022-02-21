@@ -33,7 +33,7 @@
                             </div>
 
                             <div class="uk-margin uk-text-center">
-                                <a href="" class="uk-button uk-button-primary dangky1__btnSubmit"><span>Tạo Tài Khoản</span></a>
+                                <a href="dangky3.php" class="uk-button uk-button-primary dangky1__btnSubmit"><span>Tạo Tài Khoản</span></a>
                             </div>
                             <div class="uk-margin">
                                 <div class="uk-child-width-auto uk-flex-center uk-grid-small uk-grid-40-m uk-flex-middle" uk-grid>
