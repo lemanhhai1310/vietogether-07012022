@@ -50,8 +50,9 @@
                     </div>
                 </div>
                 <div class="item__30">
-                    <div class="chitietbaiviet__boxImg">
-                        <img src="images/photo-1567789884554-0b844b5971801.png" alt="">
+                    <div class="chitietbaiviet__boxImg uk-cover-container">
+                        <img src="images/photo-1567789884554-0b844b5971801.png" alt="" uk-cover="">
+                        <canvas width="1320" height="880"></canvas>
                     </div>
                 </div>
                 <div class="item__30">

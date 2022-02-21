@@ -23,6 +23,12 @@
           margin-top: #{$x}px;
         }
       }
+      .dangky1__section &{
+        margin-top: 40px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
     }
   }
   $x:40;
@@ -32,6 +38,12 @@
 
       .home__section &{
         margin-top: 15px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+      .dangky1__section &{
+        margin-top: 20px;
         @include media-breakpoint-up('m'){
           margin-top: #{$x}px;
         }

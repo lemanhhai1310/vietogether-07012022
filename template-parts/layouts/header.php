@@ -122,10 +122,10 @@
                     <a class="header__center__navItemMobile uk-navbar-toggle uk-hidden@m" uk-icon="icon: user" href="#"></a>
                     <a class="header__center__navItemMobile header__center__navItemMobile--signIn uk-navbar-toggle uk-hidden@m" uk-icon="icon: sign-in" href="#"></a>
                     <div class="uk-navbar-item uk-visible@m">
-                        <a href="" class="header__center__linkTxt header__center__linkTxt--register">Đăng Ký</a>
+                        <a href="dangky1.php" class="header__center__linkTxt header__center__linkTxt--register">Đăng Ký</a>
                     </div>
                     <div class="uk-navbar-item uk-visible@m">
-                        <a href="" class="header__top__btn uk-button uk-button-primary"><span>Đăng Nhập</span></a>
+                        <a href="dangnhap.php" class="header__top__btn uk-button uk-button-primary"><span>Đăng Nhập</span></a>
                     </div>
                     <a class="uk-navbar-toggle header__center__iconMenu uk-visible@m" uk-navbar-toggle-icon href=""></a>
                 </div>
