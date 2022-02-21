@@ -1,0 +1,28 @@
+.timkiem{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+  }
+  &__input{
+    border-radius: 4px 0 0 4px;
+    letter-spacing: 0.05em;
+    @extend .fz-16;
+    color: #8C8C8C;
+  }
+  &__btn{
+    border-radius: 0 4px 4px 0 !important;
+  }
+  &__suggest{
+    letter-spacing: 0.05em;
+    //@extend .fz-16;
+    color: #707070;
+    font-family: $font-Poppins-SemiBold;
+  }
+  &__txt{
+    letter-spacing: 0.05em;
+    @extend .fz-16;
+    color: #8C8C8C;
+  }
+}

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8">
+    <title>Vietogether - TÌM KIẾM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1645430866">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1645430866"></script>
+</head>
+<body class="">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     logged_in_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi"
+     logged_out_greeting="Bạn cần cắt HTML/CSS? Hãy chat ngay với chúng tôi">
+</div>
+<script>
+    defer(function() {
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v5.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    }, 5000);
+</script><!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
+    <div id="offcanvas-flip-menu" class="menuMobile" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar menuMobile__bar">
+            <button class="uk-offcanvas-close menuMobile__close" type="button" uk-close></button>
+            <ul class="menuMobile__nav uk-nav-default uk-nav-parent-icon uk-nav-divider" uk-nav="multiple: true;toggle: .menuMobile__nav__icon">
+                <li class="uk-active"><a href="#">Kinh Doanh</a></li>
+                <li><a href="">Đời Sống</a></li>
+                <li class="uk-parent">
+                    <a href="#">Du Lịch</a>
+                    <span class="menuMobile__nav__icon"></span>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Đại học</a></li>
+                        <li><a href="#">Cao học</a></li>
+                        <li><a href="#">Nghiên cứu sinh</a></li>
+                        <li><a href="#">Vừa làm vừa học</a></li>
+                        <li>
+                            <a href="#">Văn bằng 2</a>
+                            <ul>
+                                <li><a href="#">Kế hoạch đấu thầu</a></li>
+                                <li><a href="#">Thông báo mời thầu</a></li>
+                                <li><a href="#">Kết quả lựa chọn nhà thầu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Sáng Tạo</a></li>
+                <li><a href="">Trải Nghiệm</a></li>
+                <li><a href="">Video</a></li>
+                <li><a href="">Podcast</a></li>
+                <li><a href="">Cafe Vietogether</a></li>
+                <li><a href="">Tất Cả Chủ Đề</a></li>
+                <li><a href="">Vietogether Store</a></li>
+                <li><a href="">Cơ Hội Nghề Nghiệp</a></li>
+                <li><a href="">Giới Thiệu</a></li>
+                <li><a href="">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__bannderAds uk-position-z-index uk-position-relative">
+        <div class="uk-container uk-padding-remove">
+            <a href=""><img class="uk-width-1-1" src="images/BannerAds.png" alt=""></a>
+        </div>
+    </div>
+    <div class="header uk-background-default" uk-sticky="animation: uk-animation-slide-top;top: 600">
+        <div class="header__top uk-visible@m">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <div class="uk-navbar-item">
+                            <a href="" class="header__top__btn header__top__btn--store uk-button uk-button-primary"><span>Ghé Thăm Vietogether Store</span></a>
+                        </div>
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <a class="uk-navbar-item header__top__social header__top__social--facebook"></a>
+                        <a class="uk-navbar-item header__top__social header__top__social--instagram"></a>
+                        <a class="uk-navbar-item header__top__social header__top__social--youtube"></a>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+        <div class="header__center uk-position-z-index uk-position-relative">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-toggle header__center__iconMenu uk-hidden@m" uk-navbar-toggle-icon href="#offcanvas-flip-menu" uk-toggle></a>
+                        <a href="." class="uk-navbar-item uk-logo uk-hidden@m uk-padding-remove"><img src="images/Vietogetherlogo.png" alt=""></a>
+                        <div class="uk-navbar-item uk-visible@m">
+                            <div class="header__center__linkTxt">Wed, August 25, 2021</div>
+                        </div>
+                        <div class="uk-navbar-item uk-visible@m">
+                            <a href="" class="header__center__linkTxt">Hợp Tác Truyền Thông</a>
+                        </div>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <a href="." class="uk-navbar-item uk-logo uk-visible@m"><img src="images/Vietogetherlogo.png" alt=""></a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div>
+                            <a class="header__center__navItemMobile uk-navbar-toggle uk-hidden@m" href="#" uk-search-icon></a>
+                            <div class="uk-navbar-dropdown header__center__formSearchDropdown" uk-drop="mode: click; cls-drop: uk-navbar-dropdown; boundary: !nav">
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-expand">
+                                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                                            <input class="uk-search-input" type="search" placeholder="Search" autofocus>
+                                        </form>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="header__center__navItemMobile uk-navbar-toggle uk-hidden@m" uk-icon="icon: user" href="#"></a>
+                        <a class="header__center__navItemMobile header__center__navItemMobile--signIn uk-navbar-toggle uk-hidden@m" uk-icon="icon: sign-in" href="#"></a>
+                        <div class="uk-navbar-item uk-visible@m">
+                            <a href="dangky1.php" class="header__center__linkTxt header__center__linkTxt--register">Đăng Ký</a>
+                        </div>
+                        <div class="uk-navbar-item uk-visible@m">
+                            <a href="dangnhap.php" class="header__top__btn uk-button uk-button-primary"><span>Đăng Nhập</span></a>
+                        </div>
+                        <a class="uk-navbar-toggle header__center__iconMenu uk-visible@m" uk-navbar-toggle-icon href=""></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header__bottom uk-visible@m">
+            <div class="uk-container uk-padding-remove">
+                <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                    <div class="uk-navbar-left">
+
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="danhmuclon.php">Kinh Doanh</a></li>
+                            <li><a href="danhmuclon.php">Đời Sống</a></li>
+                            <li>
+                                <a href="danhmuclon.php">Du Lịch</a>
+                                <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove uk-dropdown uk-dropdown-bottom-left" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 300" style="left: 0px; top: 100px;">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">Đại học</a></li>
+                                        <li><a href="#">Cao học</a></li>
+                                        <li><a href="#">Nghiên cứu sinh</a></li>
+                                        <li><a href="#">Vừa làm vừa học</a></li>
+                                        <li>
+                                            <a href="#" aria-expanded="false" class="">Văn bằng 2</a>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav uk-dropdown uk-dropdown-right-top" uk-dropdown="pos: right-top; animation: uk-animation-slide-bottom-small; duration: 300" style="left: 250px; top: 0px;">
+                                                <li><a href="#">Kế hoạch đấu thầu</a></li>
+                                                <li><a href="#">Thông báo mời thầu</a></li>
+                                                <li><a href="#">Kết quả lựa chọn nhà thầu</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="danhmuclon.php">Sáng Tạo</a></li>
+                            <li><a href="danhmuclon.php">Trải Nghiệm</a></li>
+                            <li><a href="danhmuclon.php">Video</a></li>
+                            <li><a href="danhmuclon.php">Podcast</a></li>
+                            <li><a href="danhmuclon.php">Cafe Vietogether</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item">
+                            <form class="uk-search header__bottom__formSearch">
+                                <span uk-search-icon></span>
+                                <input class="uk-search-input" type="search" placeholder="Search">
+                            </form>
+                        </div>
+                        <div class="uk-navbar-item">
+                            <div class="uk-position-relative">
+                                <div class="header__top__flag">
+                                    <span>Tiếng Việt</span>
+                                </div>
+                                <div class="uk-padding-small header__top__dropFlag" uk-dropdown="mode: click">
+                                    <ul class="uk-nav">
+                                        <li class="uk-active"><a href="" style="--background: url('images/230px-Flag_of_North_Vietnam_(1955–1976).png')">Vietnamese</a></li>
+                                        <li><a href="" style="--background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_the_United_States_%281847%E2%80%931848%29.svg/1200px-Flag_of_the_United_States_%281847%E2%80%931848%29.svg.png')">English</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="uk-overlay uk-overlay-primary mask_menu"></div><div class="uk-section timkiem__section" uk-height-viewport="offset-top: true;offset-bottom: true">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-expand">
+                <div class="item__30">
+                    <div class="item__10">
+                        <div class="uk-grid-collapse" uk-grid>
+                            <div class="uk-width-expand">
+                                <input class="uk-input timkiem__input" type="text" placeholder="" value="Ăn Uống">
+                            </div>
+                            <div class="uk-width-auto">
+                                <button class="timkiem__btn header__top__btn uk-button uk-button-primary"><span>Tìm Kiếm</span></button>
+                            </div>
+                        </div>
+                        <small class="timkiem__suggest">Có 6 kết quả cho “ Ăn uống “</small>
+                    </div>
+                    <div class="item__10">
+                        <div class="timkiem__txt">(Nếu bạn không hài lòng với kết quả, vui lòng thực hiện một tìm kiếm khác.)</div>
+                    </div>
+                </div>
+                <div class="item__30">
+                    <div class="uk-child-width-1-1 uk-grid-small uk-grid-30-m" uk-grid>
+                        <div>
+                            <div class="uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                                <div class="uk-width-1-2 uk-width-1-3@m">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zadn.vn/w360/Uploaded/lce_mdlwc/2021_12_24/10.jpg.jpg" alt="" uk-cover="">
+                                        <canvas width="308" height="237"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-flex-auto item__10">
+                                            <div class="item__10">
+                                                <h3 class="uk-h3 home__section__title1 line-clamp-2"><a href="">Hàng nghìn du khách tham quan phố cổ Hội An đêm Giáng sinh</a></h3>
+                                            </div>
+                                            <div class="item__10">
+                                                <div class="home__section__txt line-clamp-2">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout... </div>
+                                            </div>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="uk-child-width-auto uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <div class="uk-cover-container uk-border-circle uk-flex">
+                                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                                <canvas width="30" height="30"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">Lê Yến</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">250 Lượt Xem</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                                <div class="uk-width-1-2 uk-width-1-3@m">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/lerl/2021_12_24/3253264.jpg" alt="" uk-cover="">
+                                        <canvas width="308" height="237"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-flex-auto item__10">
+                                            <div class="item__10">
+                                                <h3 class="uk-h3 home__section__title1 line-clamp-2"><a href="">Người dân Hà Nội ra đường đón Noel</a></h3>
+                                            </div>
+                                            <div class="item__10">
+                                                <div class="home__section__txt line-clamp-2">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout... </div>
+                                            </div>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="uk-child-width-auto uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <div class="uk-cover-container uk-border-circle uk-flex">
+                                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                                <canvas width="30" height="30"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">Lê Yến</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">250 Lượt Xem</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                                <div class="uk-width-1-2 uk-width-1-3@m">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zadn.vn/w660/Uploaded/unvjuas/2021_12_26/Vie_Channel_VieON_Photo_RV2_11_Sol7_7__1.jpg" alt="" uk-cover="">
+                                        <canvas width="308" height="237"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-flex-auto item__10">
+                                            <div class="item__10">
+                                                <h3 class="uk-h3 home__section__title1 line-clamp-2"><a href="">Sol7 tái hiện hình ảnh Binz ở Rap Việt</a></h3>
+                                            </div>
+                                            <div class="item__10">
+                                                <div class="home__section__txt line-clamp-2">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout... </div>
+                                            </div>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="uk-child-width-auto uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <div class="uk-cover-container uk-border-circle uk-flex">
+                                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                                <canvas width="30" height="30"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">Lê Yến</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">250 Lượt Xem</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                                <div class="uk-width-1-2 uk-width-1-3@m">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zadn.vn/w960/Uploaded/pwivovlb/2021_12_30/z3067865203502_316ce16f700b5918499427d426b9b7d4_1.jpg" alt="" uk-cover="">
+                                        <canvas width="308" height="237"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-flex-auto item__10">
+                                            <div class="item__10">
+                                                <h3 class="uk-h3 home__section__title1 line-clamp-2"><a href="">Hiện trường vụ cháy chợ vải lớn nhất miền Bắc</a></h3>
+                                            </div>
+                                            <div class="item__10">
+                                                <div class="home__section__txt line-clamp-2">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout... </div>
+                                            </div>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="uk-child-width-auto uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <div class="uk-cover-container uk-border-circle uk-flex">
+                                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                                <canvas width="30" height="30"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">Lê Yến</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">250 Lượt Xem</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                                <div class="uk-width-1-2 uk-width-1-3@m">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zadn.vn/w360/Uploaded/ohunuai/2021_12_24/abeb11dd97185d46040.jpg" alt="" uk-cover="">
+                                        <canvas width="308" height="237"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-flex-auto item__10">
+                                            <div class="item__10">
+                                                <h3 class="uk-h3 home__section__title1 line-clamp-2"><a href="">NSND Minh Vương, Tấn Beo viếng nghệ sĩ Thanh Kim Huệ</a></h3>
+                                            </div>
+                                            <div class="item__10">
+                                                <div class="home__section__txt line-clamp-2">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout... </div>
+                                            </div>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="uk-child-width-auto uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <div class="uk-cover-container uk-border-circle uk-flex">
+                                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                                <canvas width="30" height="30"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">Lê Yến</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">250 Lượt Xem</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-grid-match uk-grid-small uk-grid-30-m" uk-grid>
+                                <div class="uk-width-1-2 uk-width-1-3@m">
+                                    <div class="uk-cover-container">
+                                        <img src="https://znews-photo.zadn.vn/w960/Uploaded/gtnzna/2021_12_30/du_an_mo_rong_hoang_hoa_tham_.jpg" alt="" uk-cover="">
+                                        <canvas width="308" height="237"></canvas>
+                                        <a href="" class="uk-position-cover"></a>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-flex-auto item__10">
+                                            <div class="item__10">
+                                                <h3 class="uk-h3 home__section__title1 line-clamp-2"><a href="">Khởi công loạt dự án gỡ kẹt cho sân bay Tân Sơn Nhất năm 2022</a></h3>
+                                            </div>
+                                            <div class="item__10">
+                                                <div class="home__section__txt line-clamp-2">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout... </div>
+                                            </div>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="uk-child-width-auto uk-grid-small uk-grid-30-m uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <div class="uk-child-width-auto uk-grid-10 uk-flex-middle" uk-grid>
+                                                        <div>
+                                                            <div class="uk-cover-container uk-border-circle uk-flex">
+                                                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                                                <canvas width="30" height="30"></canvas>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="home__section__txtSmall">Lê Yến</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">8 Giờ Trước</div>
+                                                </div>
+                                                <div>
+                                                    <div class="home__section__txtSmall">250 Lượt Xem</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-4@m">
+                <aside>
+                    <div class="danhmuccon__itemRight">
+                        <div class="danhmuccon__title2">Khám Phá Thêm</div>
+                        <ul class="danhmuccon__nav uk-nav-default uk-nav-divider" uk-nav>
+                            <li><a href="#">Kinh Doanh</a></li>
+                            <li><a href="#">Đời Sống</a></li>
+                            <li><a href="#">Du Lịch</a></li>
+                            <li><a href="#">Sáng Tạo</a></li>
+                            <li><a href="#">Trải Nghiệm</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Podcast</a></li>
+                            <li><a href="">Cafe vietogethers</a></li>
+                        </ul>
+                    </div>
+                    <div class="danhmuccon__itemRight">
+                        <img class="uk-width-1-1" src="images/bannerAds2.png" alt="">
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+        <div class="footer__top uk-section">
+            <div class="uk-container">
+                <div class="uk-child-width-1-4@m" uk-grid>
+                    <div class="uk-width-1-4@m">
+                        <div><img src="images/Vietogethers2.png" alt=""></div>
+                        <ul class="uk-list">
+                            <li>
+                                <div class="footer__top__txt1">Hotline</div>
+                                <div class="footer__top__txt2">Toll Free (123) 456-7890</div>
+                            </li>
+                            <li>
+                                <div class="footer__top__txt1">Email</div>
+                                <div class="footer__top__txt2">Vietogether@mail.com</div>
+                            </li>
+                            <li>
+                                <div class="footer__top__txt1">Address</div>
+                                <div class="footer__top__txt2">123 Street, City, Country</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-hidden@m" hidden>
+                        <ul class="footer__top__accordion" uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#">Kinh Doanh</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Doanh nghiệp</a></li>
+                                        <li><a href="#">Khởi nghiệp</a></li>
+                                        <li><a href="#">Lãnh đạo</a></li>
+                                        <li><a href="#">Bất động sản</a></li>
+                                        <li><a href="#">Chứng khoán</a></li>
+                                        <li><a href="#">Quốc tế</a></li>
+                                        <li><a href="#">Xu hướng kinh doanh</a></li>
+                                        <li><a href="#">Chuyện đi làm</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Đời Sống</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Tri thức</a></li>
+                                        <li><a href="#">Xã hội</a></li>
+                                        <li><a href="#">Tiêu dùng</a></li>
+                                        <li><a href="#">Xu hướng cuộc sống</a></li>
+                                        <li><a href="#">Gia đình</a></li>
+                                        <li><a href="#">Chất lượng sống</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Sáng Tạo</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Doanh nghiệp</a></li>
+                                        <li><a href="#">Khởi nghiệp</a></li>
+                                        <li><a href="#">Lãnh đạo</a></li>
+                                        <li><a href="#">Bất động sản</a></li>
+                                        <li><a href="#">Chứng khoán</a></li>
+                                        <li><a href="#">Quốc tế</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Du Lịch</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Doanh nghiệp</a></li>
+                                        <li><a href="#">Khởi nghiệp</a></li>
+                                        <li><a href="#">Lãnh đạo</a></li>
+                                        <li><a href="#">Bất động sản</a></li>
+                                        <li><a href="#">Chứng khoán</a></li>
+                                        <li><a href="#">Quốc tế</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Trải Nghiệm</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Tri thức</a></li>
+                                        <li><a href="#">Xã hội</a></li>
+                                        <li><a href="#">Tiêu dùng</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Cafe Vietogether</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Doanh nghiệp</a></li>
+                                        <li><a href="#">Khởi nghiệp</a></li>
+                                        <li><a href="#">Lãnh đạo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#">Về Chúng Tôi</a>
+                                <div class="uk-accordion-content">
+                                    <ul class="uk-nav uk-nav-default">
+                                        <li><a href="#">Doanh nghiệp</a></li>
+                                        <li><a href="#">Khởi nghiệp</a></li>
+                                        <li><a href="#">Lãnh đạo</a></li>
+                                        <li><a href="#">Bất động sản</a></li>
+                                        <li><a href="#">Chứng khoán</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Kinh Doanh</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Doanh nghiệp</a></li>
+                            <li><a href="#">Khởi nghiệp</a></li>
+                            <li><a href="#">Lãnh đạo</a></li>
+                            <li><a href="#">Bất động sản</a></li>
+                            <li><a href="#">Chứng khoán</a></li>
+                            <li><a href="#">Quốc tế</a></li>
+                            <li><a href="#">Xu hướng kinh doanh</a></li>
+                            <li><a href="#">Chuyện đi làm</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Đời Sống</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tri thức</a></li>
+                            <li><a href="#">Xã hội</a></li>
+                            <li><a href="#">Tiêu dùng</a></li>
+                            <li><a href="#">Xu hướng cuộc sống</a></li>
+                            <li><a href="#">Gia đình</a></li>
+                            <li><a href="#">Chất lượng sống</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Sáng Tạo</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Doanh nghiệp</a></li>
+                            <li><a href="#">Khởi nghiệp</a></li>
+                            <li><a href="#">Lãnh đạo</a></li>
+                            <li><a href="#">Bất động sản</a></li>
+                            <li><a href="#">Chứng khoán</a></li>
+                            <li><a href="#">Quốc tế</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Du Lịch</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Doanh nghiệp</a></li>
+                            <li><a href="#">Khởi nghiệp</a></li>
+                            <li><a href="#">Lãnh đạo</a></li>
+                            <li><a href="#">Bất động sản</a></li>
+                            <li><a href="#">Chứng khoán</a></li>
+                            <li><a href="#">Quốc tế</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Trải Nghiệm</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tri thức</a></li>
+                            <li><a href="#">Xã hội</a></li>
+                            <li><a href="#">Tiêu dùng</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Cafe Vietogether</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Doanh nghiệp</a></li>
+                            <li><a href="#">Khởi nghiệp</a></li>
+                            <li><a href="#">Lãnh đạo</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-4@m uk-width-1-2">
+                        <h4 class="uk-h4 footer__top__title">Về Chúng Tôi</h4>
+                        <ul class="uk-nav uk-nav-default">
+                            <li><a href="#">Doanh nghiệp</a></li>
+                            <li><a href="#">Khởi nghiệp</a></li>
+                            <li><a href="#">Lãnh đạo</a></li>
+                            <li><a href="#">Bất động sản</a></li>
+                            <li><a href="#">Chứng khoán</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom uk-flex uk-flex-middle uk-section-xsmall uk-text-center uk-text-left@m">
+            <div class="uk-width-1-1">
+                <div class="uk-container">
+                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                        <div class="uk-width-expand">
+                            <div class="footer__bottom__txtCopyRight">© 2021, Design by Vietogether.All right reserved </div>
+                        </div>
+                        <div class="uk-width-auto@m">
+                            <ul class="uk-grid uk-grid-small uk-flex-center uk-flex-middle uk-child-width-auto" uk-grid>
+                                <li><a href="" class="header__top__social header__top__social--facebook"></a></li>
+                                <li><a href="" class="header__top__social header__top__social--instagram"></a></li>
+                                <li><a href="" class="header__top__social header__top__social--youtube"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/app-->
+</body>
+</html>
