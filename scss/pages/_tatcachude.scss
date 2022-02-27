@@ -1,0 +1,43 @@
+.tatcachude{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+  }
+  &__box1{
+    padding: 10px;
+    background: #F8F8FB;
+    &__section{
+      padding: 5px 0;
+      @include media-breakpoint-up('m'){
+        padding: 30px 0;
+      }
+    }
+    &__title{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      font-family: $font-Montserrat-Bold;
+      color: #555555;
+    }
+    &__btn{
+      text-transform: inherit;
+      color: #286DBF;
+      border-color: #286DBF;
+      box-sizing: border-box;
+      border-radius: 5px;
+      $x:20px;
+      line-height: calc(#{$x} - 2px);
+      &:hover{
+        background: #286DBF;
+        border-color: #286DBF;
+        color: #FFFFFF;
+      }
+      span{
+        letter-spacing: 0.05em;
+        @extend .fz-10;
+        font-family: $font-Poppins-Regular;
+      }
+    }
+  }
+}
