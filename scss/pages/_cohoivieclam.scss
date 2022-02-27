@@ -1,0 +1,62 @@
+.cohoivieclam{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+  }
+  &__title{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      letter-spacing: 0.05em;
+      font-family: $font-Montserrat-Bold;
+      @extend .fz-24;
+      line-height: (29/24);
+      color: #286DBF;
+    }
+  }
+  &__box1{
+    background: #F8F8FB;
+    border-radius: 5px;
+    padding: 24px;
+    @include media-breakpoint-up('m'){
+      padding: 40px;
+    }
+    &__title{
+      letter-spacing: 0.05em;
+      font-family: $font-Montserrat-Bold;
+      @extend .fz-24;
+      line-height: (29/24);
+      color: #555555;
+      a{
+        color: #555555;
+      }
+    }
+    &__txt{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      font-family: $font-Poppins-Regular;
+      color: #286DBF;
+    }
+  }
+  &__filter{
+    &__btn{
+      text-transform: inherit;
+      padding: 0 15px;
+      background: #F8F8FB;
+      border-color: #F8F8FB;
+      border-radius: 5px;
+      @include media-breakpoint-up('m'){
+        $x:60px;
+        line-height: calc(#{$x} - 2px);
+      }
+      >span{
+        &:first-child{
+          letter-spacing: 0.05em;
+          @extend .fz-16;
+          color: #555555;
+        }
+      }
+    }
+  }
+}
