@@ -127,7 +127,7 @@
                     <div class="uk-navbar-item uk-visible@m">
                         <a href="dangnhap.php" class="header__top__btn uk-button uk-button-primary"><span>Đăng Nhập</span></a>
                     </div>
-                    <a class="uk-navbar-toggle header__center__iconMenu uk-visible@m" uk-navbar-toggle-icon href=""></a>
+                    <a class="uk-navbar-toggle header__center__iconMenu uk-visible@m" uk-navbar-toggle-icon href="#offcanvas-flip-menu" uk-toggle></a>
                 </div>
             </nav>
         </div>

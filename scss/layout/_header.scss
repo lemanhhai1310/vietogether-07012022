@@ -452,6 +452,7 @@
   background: rgba(0, 0, 0, 0.4);
 }
 .menuMobile{
+  z-index: 9999;
   &__bar{
     background: #FFFFFF;
   }
