@@ -52,11 +52,11 @@
             <li><a href="">Video</a></li>
             <li><a href="">Podcast</a></li>
             <li><a href="">Cafe Vietogether</a></li>
-            <li><a href="">Tất Cả Chủ Đề</a></li>
+            <li><a href="tatcachude.php">Tất Cả Chủ Đề</a></li>
             <li><a href="">Vietogether Store</a></li>
-            <li><a href="">Cơ Hội Nghề Nghiệp</a></li>
-            <li><a href="">Giới Thiệu</a></li>
-            <li><a href="">Liên Hệ</a></li>
+            <li><a href="cohoivieclam.php">Cơ Hội Nghề Nghiệp</a></li>
+            <li><a href="gioithieu.php">Về Vietogether</a></li>
+            <li><a href="lienhe.php">Liên Hệ</a></li>
         </ul>
     </div>
 </div>

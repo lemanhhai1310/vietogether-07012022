@@ -1,0 +1,71 @@
+.gioithieu{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-top: 72px;
+      padding-bottom: 120px;
+    }
+  }
+  &__article{
+    &__title{
+      color: #333333;
+      line-height: 1.33;
+      font-family: $font-Montserrat-Bold;
+      @extend .fz-30;
+
+    }
+    &__desc{
+      color: #555555;
+      @extend .fz-16;
+      line-height: 1.88;
+      font-family: $font-Poppins-SemiBold;
+    }
+    p{
+      color: #707070;
+      @extend .fz-16;
+      line-height: 1.88;
+      font-family: $font-Poppins-Regular;
+    }
+  }
+  &__card{
+    background: #F8F8FB;
+    &__title{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #286DBF;
+      font-family: $font-Poppins-SemiBold;
+      line-height: 1.88;
+    }
+  }
+  &__doitac{
+    &__desc{
+      line-height: 1.88;
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      color: #707070;
+      font-family: $font-Poppins-Regular;
+    }
+    &__item{
+      background-color: #F8F8FB;
+      border-radius: 5px;
+      min-height: 120px;
+    }
+  }
+  &__avartar{
+    &__bg{
+      border-radius: 100px;
+    }
+    &__name{
+      letter-spacing: 0.05em;
+      @extend .fz-18;
+      font-family: $font-Poppins-Bold;
+      color: #444444;
+    }
+    &__desc{
+      letter-spacing: 0.05em;
+      @extend .fz-14;
+      color: #707070;
+      font-family: $font-Poppins-Regular;
+      line-height: 2.14;
+    }
+  }
+}

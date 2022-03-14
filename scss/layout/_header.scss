@@ -148,6 +148,19 @@
         @extend .fz-14;
         font-family: $font-Poppins-Regular;
       }
+      &--job{
+        &:before{
+          margin-right: 8px;
+          content: "";
+          width: 24px;
+          height: 24px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: flex;
+          background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.5977 6.67725H17.5977V4.67725C17.5977 3.57425 16.7007 2.67725 15.5977 2.67725H9.59766C8.49466 2.67725 7.59766 3.57425 7.59766 4.67725V6.67725H4.59766C3.49466 6.67725 2.59766 7.57425 2.59766 8.67725V11.6772H22.5977V8.67725C22.5977 7.57425 21.7007 6.67725 20.5977 6.67725ZM9.59766 4.67725H15.5977V6.67725H9.59766V4.67725ZM14.5977 14.6772H10.5977V12.6772H2.59766V19.6772C2.59766 20.7802 3.49466 21.6772 4.59766 21.6772H20.5977C21.7007 21.6772 22.5977 20.7802 22.5977 19.6772V12.6772H14.5977V14.6772Z' fill='white'/%3E%3C/svg%3E%0A");
+        }
+      }
       &--store{
         &:before{
           margin-right: 8px;
