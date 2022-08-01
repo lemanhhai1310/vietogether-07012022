@@ -4,6 +4,7 @@
     &:nth-child(n+2){
       margin-top: #{$x}px;
 
+      .video__section &,
       .gioithieu__section &,
       .home__section &{
         margin-top: 30px;
