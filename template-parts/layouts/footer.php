@@ -200,6 +200,7 @@
                             <li><a href="" class="header__top__social header__top__social--facebook"></a></li>
                             <li><a href="" class="header__top__social header__top__social--instagram"></a></li>
                             <li><a href="" class="header__top__social header__top__social--youtube"></a></li>
+                            <li><a href="" class="header__top__social header__top__social--tiktok"></a></li>
                         </ul>
                     </div>
                 </div>

@@ -80,8 +80,78 @@
         <div class="item__120">
             <a href=""><img class="uk-width-1-1" src="images/ADS1.png" alt=""></a>
         </div>
-        <div class="item__120">
+        <div class="item__120 video__360">
+            <div class="uk-grid-30" uk-grid>
+                <div class="uk-width-expand">
+                    <div class="item__40">
+                        <div class="video__360__box">
+                            <div class="uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <h4 class="uk-h4 home__section__title3">360 Video</h4>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <div uk-form-custom="target: > * > span:first-child">
+                                        <select>
+                                            <option value="">Mới Nhất</option>
+                                            <option value="1">Liên Quan</option>
+                                            <option value="2">Tìm kiếm nhiều nhất</option>
+                                        </select>
+                                        <button class="uk-button uk-button-default video__360__btnFillter" type="button" tabindex="-1">
+                                            <span></span>
+                                            <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__40">
+                        <div class="uk-grid-small uk-grid-30-m" uk-grid>
+                            <?php
+                                for ($i=6;$i<=10;$i++):
+                                $img = 'https://picsum.photos/308/206/?random?v='.+$i;
+                            ?>
+                                <div class="uk-width-1-1">
+                                    <div class="video__boxToggle" uk-toggle="cls: uk-transition-toggle; mode: media; media: @m">
+                                        <div class="uk-grid-small uk-grid-30-m uk-grid-match" uk-grid>
+                                            <div class="uk-width-auto@m uk-width-1-2">
+                                                <div class="uk-cover-container">
+                                                    <img class="uk-transition-scale-up uk-transition-opaque" src="<?= $img ?>" alt="" uk-cover="">
+                                                    <canvas width="308" height="206"></canvas>
+                                                    <div class="uk-position-center video__boxPlay">
+                                                        <a href="" class="video__btnPlay"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div class="uk-flex uk-flex-column">
+                                                    <div class="uk-flex-auto">
+                                                        <h4 class="uk-h4 uk-margin-remove video__title2 line-clamp-2" uk-toggle="cls: line-clamp-2; mode: media; media: @m"><a href=""><?= $title[array_rand($title)] ?></a></h4>
+                                                    </div>
+                                                    <div class="uk-grid-30-m uk-grid-small uk-child-width-auto" uk-grid>
+                                                        <div>
+                                                            <span class="video__time">21 Thg 08, 2021</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="video__time">1.4k Lượt xem</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                    <div class="item__40">
+                        <a href="" class="header__top__btn uk-button uk-button-primary" style="width: intrinsic;"><span>Xem Thêm</span></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m">
 
+                </div>
+            </div>
         </div>
     </div>
 </div>

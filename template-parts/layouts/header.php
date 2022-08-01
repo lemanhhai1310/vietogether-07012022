@@ -80,6 +80,7 @@
                     <a class="uk-navbar-item header__top__social header__top__social--facebook"></a>
                     <a class="uk-navbar-item header__top__social header__top__social--instagram"></a>
                     <a class="uk-navbar-item header__top__social header__top__social--youtube"></a>
+                    <a class="uk-navbar-item header__top__social header__top__social--tiktok"></a>
                 </div>
 
             </nav>
