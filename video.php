@@ -149,7 +149,37 @@
                     </div>
                 </div>
                 <div class="uk-width-1-3@m">
-
+                    <div class="item__30">
+                        <h2 class="uk-h2 video__sidebar__title">Danh sách phát</h2>
+                        <ul class="uk-nav uk-nav-default video__sidebar__nav" uk-nav>
+                            <?php
+                            $data = array(
+                                'Tất cả video ( 360 )',
+                                'Talkshow ( 80 )',
+                                'Vietogether work ( 101 )',
+                                'Voices from sonatus ( 86 )',
+                                'The more of less ( 30 )',
+                                'Castcamp 2021 ( 12 )',
+                                'Funny ( 68 )',
+                            );
+                            foreach ($data as $k=>$v): ?>
+                            <li class="<?= ($k==0)?'uk-active':'' ?>"><a href=""><?= $v ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <div class="item__30">
+                        <div class="uk-grid-small uk-grid-40-m uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="video__sidebar__txt">Chia Sẻ</div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <a href="" class="video__sidebar__icon video__sidebar__icon--fb" uk-tooltip="Facebook"></a>
+                                <a href="" class="video__sidebar__icon video__sidebar__icon--insta" uk-tooltip="Instagram"></a>
+                                <a href="" class="video__sidebar__icon video__sidebar__icon--in" uk-tooltip="LinkedIn"></a>
+                                <a href="" class="video__sidebar__icon video__sidebar__icon--copy" uk-tooltip="Copy"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
