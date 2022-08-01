@@ -25,23 +25,51 @@
                             <div class="uk-cover-container uk-light">
                                 <img src="<?= $img ?>" alt="" uk-cover="">
                                 <canvas width="1320" height="880"></canvas>
+                                <div class="uk-position-center video__boxPlay">
+                                    <a href="" class="video__btnPlay"></a>
+                                </div>
                                 <div class="video__boxGradient uk-position-bottom uk-padding-small">
-                                    <h3 class="uk-h3"><a href=""><?= $title[array_rand($title)] ?></a></h3>
+                                    <h3 class="uk-h3 video__boxGradient__title"><a href=""><?= $title[array_rand($title)] ?></a></h3>
+                                    <div class="uk-grid-30-m uk-grid-small uk-child-width-auto" uk-grid>
+                                        <div>
+                                            <span class="video__time">21 Thg 08, 2021</span>
+                                        </div>
+                                        <div>
+                                            <span class="video__time">1.4k Lượt xem</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     <?php else: ?>
                         <?php $img = 'https://picsum.photos/308/206/?random?v='.+$i; ?>
                         <div class="uk-width-1-4@m">
-                            <div class="uk-child-width-1-2 uk-child-width-1-1@m uk-grid-13" uk-grid>
-                                <div>
-                                    <div class="uk-cover-container">
-                                        <img src="<?= $img ?>" alt="" uk-cover="">
-                                        <canvas width="308" height="206"></canvas>
+                            <div class="video__boxToggle" uk-toggle="cls: uk-transition-toggle; mode: media; media: @m">
+                                <div class="uk-child-width-1-2 uk-child-width-1-1@m uk-grid-13 uk-grid-match" uk-grid>
+                                    <div>
+                                        <div class="uk-cover-container">
+                                            <img class="uk-transition-scale-up uk-transition-opaque" src="<?= $img ?>" alt="" uk-cover="">
+                                            <canvas width="308" height="206"></canvas>
+                                            <div class="uk-position-center video__boxPlay">
+                                                <a href="" class="video__btnPlay"></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-
+                                    <div>
+                                        <div class="uk-flex uk-flex-column">
+                                            <div class="uk-flex-auto">
+                                                <h4 class="uk-h4 uk-margin-remove video__title1" uk-toggle="cls: line-clamp-2; mode: media; media: @m"><a href=""><?= $title[array_rand($title)] ?></a></h4>
+                                            </div>
+                                            <div class="uk-grid-30-m uk-grid-small uk-child-width-auto" uk-grid>
+                                                <div>
+                                                    <span class="video__time">21 Thg 08, 2021</span>
+                                                </div>
+                                                <div>
+                                                    <span class="video__time">1.4k Lượt xem</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

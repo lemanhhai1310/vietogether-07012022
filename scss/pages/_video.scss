@@ -15,5 +15,62 @@
       min-height: 200px;
     }
     background: linear-gradient(3.11deg, #000000 2.42%, rgba(0, 0, 0, 0) 97.29%);
+    &__title{
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      @extend .fz-24;
+      font-family: $font-Montserrat-Bold;
+      line-height: 2;
+      margin: 0;
+      @extend .line-clamp-2;
+    }
+  }
+  &__boxToggle{
+
+  }
+  &__boxPlay{
+    display: block;
+    @include fluidx(80px,60px,width);
+    .uk-light &{
+      @include fluidx(194px,70px,width);
+      @include media-breakpoint-down('s'){
+        top: 30%;
+      }
+    }
+  }
+  &__btnPlay{
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='194' height='194' viewBox='0 0 194 194' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle opacity='0.6' cx='97' cy='97' r='97' fill='white'/%3E%3Ccircle cx='97' cy='97' r='73' fill='white'/%3E%3Cpath d='M86.333 77V117L119.666 97L86.333 77Z' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+  }
+  &__title1{
+    letter-spacing: 0.05em;
+    color: #333333;
+    @extend .fz-16;
+    line-height: 1.88;
+    font-family: $font-Montserrat-Bold;
+    a{
+      color: #333333;
+      .video__boxToggle:hover &{
+        @include media-breakpoint-up('m'){
+          color: #286DBF;
+        }
+      }
+    }
+  }
+  &__time{
+    letter-spacing: 0.05em;
+    @extend .fz-12;
+    line-height: 2.5;
+    font-family: $font-Poppins-Regular;
+    color: #707070;
+    .uk-light &{
+      color: rgba(255,255,255,.7);
+    }
   }
 }
