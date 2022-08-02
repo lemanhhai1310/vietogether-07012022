@@ -105,6 +105,56 @@
         border-radius: 25px;
         min-height: 277px;
       }
+      &__cover{
+        @include media-breakpoint-up('m'){
+          border-radius: 10px;
+        }
+      }
+      &__label{
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #286DBF;
+        @extend .fz-14;
+        line-height: 2.14;
+        font-family: $font-Poppins-Regular;
+      }
+      &__title{
+        letter-spacing: 0.05em;
+        color: #333333;
+        @extend .fz-16;
+        font-family: $font-Montserrat-Bold;
+        line-height: 1.88;
+        a{
+          color: #333333;
+        }
+      }
+      &__timeCreate{
+        letter-spacing: 0.05em;
+        color: #707070;
+        line-height: 2.5;
+        @extend .fz-12;
+        font-family: $font-Poppins-Regular;
+      }
+      &__progress{
+
+      }
+      &__time{
+        letter-spacing: 0.05em;
+        color: #707070;
+        @extend .fz-8;
+        font-family: $font-Poppins-Regular;
+        line-height: 3.75;
+      }
+      &__btnPlay{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.800781 0V12L10.8008 6L0.800781 0Z' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
   }
 }

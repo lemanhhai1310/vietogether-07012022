@@ -76,7 +76,7 @@
                                 <div class="item__5">
                                     <div class="uk-grid-10 uk-grid-20-m uk-grid-match" uk-grid>
                                         <div class="uk-width-1-3">
-                                            <div class="uk-cover-container uk-border-rounded">
+                                            <div class="uk-cover-container uk-border-rounded podcast__section2__box1__cover">
                                                 <img src="<?= $img ?>" alt="" uk-cover="">
                                                 <canvas width="180" height="180"></canvas>
                                             </div>
@@ -84,10 +84,10 @@
                                         <div class="uk-width-expand">
                                             <div class="uk-flex uk-flex-column">
                                                 <div class="uk-flex-auto">
-                                                    <div><?= $label[array_rand($label)] ?></div>
-                                                    <h3 class="uk-h3 uk-margin-remove"><a href=""><?= $title[array_rand($title)] ?></a></h3>
+                                                    <div class="podcast__section2__box1__label"><?= $label[array_rand($label)] ?></div>
+                                                    <h3 class="uk-h3 uk-margin-remove podcast__section2__box1__title"><a href=""><?= $title[array_rand($title)] ?></a></h3>
                                                 </div>
-                                                <div>20 Thg 08, 2021</div>
+                                                <div class="podcast__section2__box1__timeCreate">20 Thg 08, 2021</div>
                                             </div>
                                         </div>
                                     </div>
@@ -95,13 +95,13 @@
                                 <div class="item__5">
                                     <div class="uk-grid-10 uk-flex-middle uk-child-width-auto" uk-grid>
                                         <div class="uk-width-expand">
-                                            <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+                                            <input class="uk-range podcast__section2__box1__progress" type="range" value="2" min="0" max="10" step="0.1">
                                         </div>
                                         <div>
-                                            <div>48 : 35</div>
+                                            <div class="podcast__section2__box1__time">48 : 35</div>
                                         </div>
                                         <div>
-                                            <a href="" class=""></a>
+                                            <a href="" class="podcast__section2__box1__btnPlay"></a>
                                         </div>
                                     </div>
                                 </div>
