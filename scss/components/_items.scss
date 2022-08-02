@@ -92,6 +92,19 @@
       margin-top: #{$x}px;
     }
   }
+  $x:13;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+
+      .podcast__section1 &{
+        margin-top: 10px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
   $x:10;
   &__#{$x}{
     &:nth-child(n+2){

@@ -1,3 +1,90 @@
 .podcast{
-
+  &__section1{
+    background: #F8F8FB;
+    @include media-breakpoint-up('m'){
+      $x:120px;
+      padding-top: #{$x};
+      padding-bottom: #{$x};
+    }
+    &__boxCover{
+      @include media-breakpoint-up('m'){
+        border-radius: 50px;
+      }
+    }
+    &__label{
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #286DBF;
+      line-height: 3;
+      @extend .fz-16;
+      font-family: $font-Montserrat-Bold;
+    }
+    &__title{
+      letter-spacing: 0.05em;
+      color: #333333;
+      @extend .fz-36;
+      line-height: 1.33;
+      font-family: $font-Montserrat-Bold;
+    }
+    &__desc{
+      letter-spacing: 0.05em;
+      color: #707070;
+      line-height: 1.88;
+      @extend .fz-16;
+      font-family: $font-Poppins-Regular;
+    }
+    &__btnPlay{
+      width: 80px;
+      height: 80px;
+      display: flex;
+      border-radius: 50%;
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+      background: rgba(#ffffff,0.6);
+      position: relative;
+      &:before{
+        content: "";
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: url("data:image/svg+xml,%3Csvg width='18' height='20' viewBox='0 0 18 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.666992 0V20L17.3337 10L0.666992 0Z' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    &__btn{
+      border-radius: 5px;
+      letter-spacing: 0.05em;
+      text-transform: inherit;
+      @extend .fz-16;
+      font-family: $font-Poppins-Regular;
+      &--viewAll{
+        background: #EBEBEB;
+        color: #444444;
+      }
+      &--archire{
+        background: #286DBF;
+        color: #FFFFFF;
+        display: inline-flex;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:before{
+          content: "";
+          width: 30px;
+          height: 30px;
+          background-image: url("data:image/svg+xml,%3Csvg width='20' height='26' viewBox='0 0 20 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 0.5H2.5C1.12125 0.5 0 1.62125 0 3V25.5L10 19.785L20 25.5V3C20 1.62125 18.8787 0.5 17.5 0.5ZM17.5 21.1912L10 16.9062L2.5 21.1912V3H17.5V21.1912Z' fill='white'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: center;
+          display: flex;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }
