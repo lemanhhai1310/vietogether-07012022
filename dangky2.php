@@ -13,7 +13,8 @@
                         <fieldset class="uk-fieldset">
 
                             <div class="uk-margin">
-                                <input class="uk-input dangky1__input" type="text" placeholder="Họ & Tên">
+                                <input class="uk-input dangky1__input uk-form-danger" type="text" placeholder="Họ & Tên" value="Lee Manh Hai">
+                                <small class="uk-text-danger">Please enter name</small>
                             </div>
                             <div class="uk-margin">
                                 <input class="uk-input dangky1__input" type="text" placeholder="Ngày Sinh">

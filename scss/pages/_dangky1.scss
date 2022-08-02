@@ -6,7 +6,7 @@
     }
   }
   &__input{
-    border: 1px solid #EBEBEB;
+    border-color: #EBEBEB;
     box-sizing: border-box;
     border-radius: 5px;
     letter-spacing: 0.05em;
@@ -15,6 +15,10 @@
     @extend .fz-16;
     @include media-breakpoint-up('m'){
       height: 50px;
+    }
+    &.uk-form-danger{
+      border-color: #f0506e;
+      color: #f0506e;
     }
   }
   &__txt{
