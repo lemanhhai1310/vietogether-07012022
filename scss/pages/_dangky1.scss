@@ -37,6 +37,10 @@
       letter-spacing: 0.05em;
       @extend .fz-14;
     }
+    &.uk-button-default{
+      background: #EBEBEB;
+      color: #707070;
+    }
   }
   &__btn{
     text-transform: inherit;

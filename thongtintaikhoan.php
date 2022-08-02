@@ -6,7 +6,37 @@
         <div class="uk-grid-30-m" uk-grid>
             <div class="uk-width-expand">
                 <div class="item__70">
-
+                    <div class="uk-flex-middle uk-grid-small" uk-grid>
+                        <div class="uk-width-expand">
+                            <h4 class="uk-h4 home__section__title3">Thông Tin Tài Khoản</h4>
+                        </div>
+                        <div class="uk-width-auto@s">
+                            <button class="uk-button uk-button-primary dangky1__btnSubmit"><span>Lưu</span></button>
+                            <button class="uk-button uk-button-default dangky1__btnSubmit"><span>Hủy</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__70">
+                    <div class="item__40">
+                        <div class="uk-grid-30-m uk-grid-small uk-child-width-auto uk-flex-middle" uk-grid>
+                            <div>
+                                <div class="uk-cover-container uk-border-circle uk-background-muted">
+                                    <canvas width="195" height="195"></canvas>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item__8">
+                                    <div class="listbaicua1tacgia__section1__label">Editor</div>
+                                </div>
+                                <div class="item__8">
+                                    <h1 class="listbaicua1tacgia__section1__title uk-h1">Đào Tuấn</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__40">
+                        <textarea class="uk-textarea thongtintaikhoan__textarea" rows="5" placeholder="Giới thiệu về bạn..."></textarea>
+                    </div>
                 </div>
                 <div class="item__70">
                     <div class="item__22">

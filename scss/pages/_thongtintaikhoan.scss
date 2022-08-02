@@ -5,6 +5,23 @@
       padding-top: 80px;
     }
   }
+  &__coverAvarta{
+
+  }
+  &__textarea{
+    background: #F8F8FB;
+    border-color: #F8F8FB;
+    border-radius: 10px;
+    letter-spacing: 0.05em;
+    color: #8C8C8C;
+    @extend .fz-14;
+    line-height: (21/14);
+    font-family: $font-Poppins-Medium;
+    @include media-breakpoint-up('m'){
+      min-height: 195px;
+      padding: 20px;
+    }
+  }
   &__topHeader{
     background: #286DBF;
     height: 40px;
