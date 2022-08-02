@@ -133,14 +133,14 @@
                     $img = 'https://picsum.photos/420/420/?random?v='.+$j;
                     ?>
                     <div>
-                        <div class="uk-child-width-1-2 uk-child-width-1-1@m uk-grid-small uk-grid-17-m uk-grid-match" uk-grid>
-                            <div>
+                        <div class="uk-grid-small uk-grid-17-m uk-grid-match" uk-grid>
+                            <div class="uk-width-1-3 uk-width-1-1@m">
                                 <div class="uk-cover-container podcast__section2__box2__cover uk-border-rounded">
                                     <img src="<?= $img ?>" alt="" uk-cover="">
                                     <canvas width="420" height="420"></canvas>
                                 </div>
                             </div>
-                            <div>
+                            <div class="uk-width-expand uk-width-1-1@m">
                                 <div class="item__16">
                                     <h3 class="uk-h3 podcast__section2__box2__title"><a href=""><?= $title1[array_rand($title1)] ?></a></h3>
                                 </div>
