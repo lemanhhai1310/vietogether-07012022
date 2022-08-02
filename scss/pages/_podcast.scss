@@ -124,6 +124,7 @@
         @extend .fz-16;
         font-family: $font-Montserrat-Bold;
         line-height: 1.88;
+        @extend .line-clamp-2;
         a{
           color: #333333;
         }
@@ -134,9 +135,29 @@
         line-height: 2.5;
         @extend .fz-12;
         font-family: $font-Poppins-Regular;
+        display: flex;
+        align-items: center;
+        &:after{
+          content: "";
+          width: 14px;
+          height: 14px;
+          margin-left: 15px;
+          background-image: url("data:image/svg+xml,%3Csvg width='10' height='12' viewBox='0 0 10 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.49967 0.166626H1.49967C0.856258 0.166626 0.333008 0.689876 0.333008 1.33329V11.8333L4.99967 9.16629L9.66634 11.8333V1.33329C9.66634 0.689876 9.14309 0.166626 8.49967 0.166626ZM8.49967 9.82254L4.99967 7.82288L1.49967 9.82254V1.33329H8.49967V9.82254Z' fill='%23286DBF'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: center;
+          display: flex;
+        }
       }
       &__progress{
+        &::-webkit-slider-thumb{
 
+        }
+        &::-webkit-slider-runnable-track{
+
+        }
+        &::-webkit-slider-container{
+
+        }
       }
       &__time{
         letter-spacing: 0.05em;
