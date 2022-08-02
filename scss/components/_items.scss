@@ -4,6 +4,7 @@
     &:nth-child(n+2){
       margin-top: #{$x}px;
 
+      .podcast__section2 &,
       .video__section &,
       .gioithieu__section &,
       .home__section &{
@@ -57,6 +58,7 @@
         }
       }
 
+      .podcast__section2 &,
       .video__360 &,
       .gioithieu__section &,
       .dangky1__section &{
@@ -106,6 +108,12 @@
     }
   }
   $x:10;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:5;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;

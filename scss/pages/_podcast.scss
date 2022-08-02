@@ -87,4 +87,24 @@
       }
     }
   }
+  &__section2{
+    @include media-breakpoint-up('m'){
+      $x:120px;
+      padding-top: #{$x};
+      padding-bottom: #{$x};
+    }
+    &__box1{
+      padding: 15px;
+      background: #F8F8FB;
+      border-radius: 10px;
+      @include media-breakpoint-up('m'){
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 28px;
+        padding-bottom: 28px;
+        border-radius: 25px;
+        min-height: 277px;
+      }
+    }
+  }
 }
