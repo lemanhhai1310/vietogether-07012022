@@ -34,6 +34,19 @@
       }
     }
   }
+  $x:70;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+
+      .thongtintaikhoan__section &{
+        margin-top: 40px;
+        @include media-breakpoint-up('m'){
+          margin-top: #{$x}px;
+        }
+      }
+    }
+  }
   $x:60;
   &__#{$x}{
     &:nth-child(n+2){
@@ -58,6 +71,7 @@
         }
       }
 
+      .thongtintaikhoan__section &,
       .podcast__section2 &,
       .video__360 &,
       .gioithieu__section &,
@@ -74,12 +88,19 @@
     &:nth-child(n+2){
       margin-top: #{$x}px;
 
+      .thongtintaikhoan__section &,
       .chitietbaiviet__section &{
         margin-top: 15px;
         @include media-breakpoint-up('m'){
           margin-top: #{$x}px;
         }
       }
+    }
+  }
+  $x:22;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
     }
   }
   $x:20;
