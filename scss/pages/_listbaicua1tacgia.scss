@@ -1,5 +1,75 @@
 .listbaicua1tacgia{
   &__section1{
     background: #F8F8FB;
+    @include media-breakpoint-up('m'){
+      padding-top: 102px;
+      padding-bottom: 102px;
+    }
+    &__title{
+      letter-spacing: 0.05em;
+      color: #333333;
+      @extend .fz-36;
+      line-height: (44/36);
+      font-family: $font-Montserrat-Bold;
+    }
+    &__label{
+      letter-spacing: 0.05em;
+      color: #707070;
+      @extend .fz-16;
+      line-height: (24/16);
+      font-family: $font-Poppins-Medium;
+    }
+    &__desc{
+      letter-spacing: 0.05em;
+      @extend .fz-16;
+      line-height: 1.88;
+      font-family: $font-Poppins-Regular;
+      color: #707070;
+    }
+  }
+  &__section2{
+    @include media-breakpoint-up('m'){
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    &__title{
+      letter-spacing: 0.05em;
+      color: #333333;
+      @extend .fz-16;
+      font-family: $font-Montserrat-Bold;
+      line-height: 1.88;
+      a{
+        color: #333333;
+      }
+    }
+    &__label{
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #286DBF;
+      line-height: 2.14;
+      @extend .fz-14;
+      font-family: $font-Poppins-Regular;
+    }
+    &__time{
+      letter-spacing: 0.05em;
+      color: #707070;
+      line-height: 2.5;
+      @extend .fz-12;
+      font-family: $font-Poppins-Regular;
+      display: flex;
+      align-items: center;
+      &:after{
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='12' viewBox='0 0 10 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.50016 0.166626H1.50016C0.856746 0.166626 0.333496 0.689876 0.333496 1.33329V11.8333L5.00016 9.16629L9.66683 11.8333V1.33329C9.66683 0.689876 9.14358 0.166626 8.50016 0.166626ZM8.50016 9.82254L5.00016 7.82288L1.50016 9.82254V1.33329H8.50016V9.82254Z' fill='%23707070'/%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        @include media-breakpoint-up('m'){
+          margin-left: 36px;
+        }
+      }
+    }
   }
 }

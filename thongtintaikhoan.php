@@ -1,4 +1,4 @@
-<?php $data["title"] = "TÀI KHOẢN"; ?>
+<?php $data["title"] = "THÔNG TIN TÀI KHOẢN"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-section thongtintaikhoan__section">
