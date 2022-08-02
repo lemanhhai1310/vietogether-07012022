@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div class="item__40">
-                <a href="" class="header__top__btn uk-button uk-button-primary" style="width: intrinsic;"><span>Xem Thêm</span></a>
+                <a href="" class="header__top__btn uk-button uk-button-primary" style="width: fit-content !important;"><span>Xem Thêm</span></a>
             </div>
         </div>
     </div>

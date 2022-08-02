@@ -12,13 +12,19 @@
             </div>
             <div class="item__30">
                 <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-10 uk-grid-30-m uk-grid-match" uk-grid>
-                    <?php for ($i=0;$i<=7;$i++): ?>
+                    <?php
+                    for ($i=0;$i<=7;$i++):
+                    $img = 'https://picsum.photos/308/237/?random?v='.+$i;
+                    ?>
                     <div>
                         <div class="tatcachude__box1">
                             <div class="item__10">
                                 <div class="uk-cover-container">
-                                    <img src="images/photo-1612296727716-d6c69d2a2cbb 1.png" alt="" uk-cover="">
+                                    <img src="<?= $img ?>" alt="" uk-cover="">
                                     <canvas width="308" height="237"></canvas>
+                                    <?php if ($i==0): ?>
+                                    <div class="tatcachude__box1__bookmark uk-position-top-right"></div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="item__10">
@@ -28,7 +34,11 @@
                                             <div class="tatcachude__box1__title">Doanh Nghiệp</div>
                                         </div>
                                         <div class="uk-width-auto@s">
-                                            <a href="" class="tatcachude__box1__btn uk-button uk-button-default uk-button-small"><span>Theo Dõi</span></a>
+                                            <?php if ($i==0): ?>
+                                                <a href="" class="tatcachude__box1__btn uk-button uk-button-danger uk-button-small"><span>Hủy Theo Dõi</span></a>
+                                            <?php else: ?>
+                                                <a href="" class="tatcachude__box1__btn uk-button uk-button-default uk-button-small"><span>Theo Dõi</span></a>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>
@@ -45,12 +55,15 @@
             </div>
             <div class="item__30">
                 <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-10 uk-grid-30-m uk-grid-match" uk-grid>
-                    <?php for ($i=0;$i<=7;$i++): ?>
+                    <?php
+                    for ($i=0;$i<=7;$i++):
+                    $img = 'https://picsum.photos/308/237/?random?k='.+$i;
+                    ?>
                         <div>
                             <div class="tatcachude__box1">
                                 <div class="item__10">
                                     <div class="uk-cover-container">
-                                        <img src="images/photo-1612296727716-d6c69d2a2cbb 1.png" alt="" uk-cover="">
+                                        <img src="<?= $img ?>" alt="" uk-cover="">
                                         <canvas width="308" height="237"></canvas>
                                     </div>
                                 </div>
