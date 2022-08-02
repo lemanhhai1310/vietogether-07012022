@@ -20,8 +20,13 @@
                     <div class="item__40">
                         <div class="uk-grid-30-m uk-grid-small uk-child-width-auto uk-flex-middle" uk-grid>
                             <div>
-                                <div class="uk-cover-container uk-border-circle uk-background-muted">
+                                <div class="uk-cover-container uk-border-circle thongtintaikhoan__coverAvarta">
+                                    <img src="images/noimage.jpg" alt="" uk-cover="">
                                     <canvas width="195" height="195"></canvas>
+                                    <div class="thongtintaikhoan__coverAvarta__custom uk-position-bottom" uk-form-custom>
+                                        <input type="file">
+                                        <span class="uk-link thongtintaikhoan__coverAvarta__upload">Tải ảnh Lên</span>
+                                    </div>
                                 </div>
                             </div>
                             <div>
