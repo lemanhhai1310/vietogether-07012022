@@ -177,5 +177,50 @@
         background-position: center;
       }
     }
+    &__box2{
+      &__cover{
+        @include media-breakpoint-up('m'){
+          border-radius: 50px;
+        }
+      }
+      &__title{
+        margin: 0;
+        letter-spacing: 0.05em;
+        color: #333333;
+        line-height: 1.25;
+        @extend .fz-24;
+        font-family: $font-Montserrat-Bold;
+        a{
+          color: #333333;
+        }
+      }
+      &__desc{
+        @extend .line-clamp-3;
+        letter-spacing: 0.05em;
+        color: #707070;
+        line-height: 1.88;
+        @extend .fz-16;
+        font-family: $font-Poppins-Regular;
+      }
+      &__tap{
+        letter-spacing: 0.05em;
+        color: #8C8C8C;
+        line-height: 1.88;
+        @extend .fz-16;
+        font-family: $font-Montserrat-Regular;
+        display: flex;
+        align-items: center;
+        &:before{
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          content: "";
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12V10.293C20 5.851 16.521 2.132 12.245 2.003C10.041 1.952 7.994 2.739 6.429 4.259C5.65744 5.00232 5.04444 5.89423 4.62697 6.88092C4.2095 7.86761 3.99623 8.92863 4 10V12C2.897 12 2 12.897 2 14V18C2 19.103 2.897 20 4 20H6V10C5.99705 9.19649 6.15688 8.40071 6.46985 7.66065C6.78282 6.92059 7.24245 6.25159 7.821 5.694C8.39712 5.13318 9.08047 4.69435 9.83014 4.4038C10.5798 4.11324 11.3804 3.97692 12.184 4.003C15.392 4.099 18 6.921 18 10.293V20H20C21.103 20 22 19.103 22 18V14C22 12.897 21.103 12 20 12Z' fill='%23707070'/%3E%3Cpath d='M7 12H9V20H7V12ZM15 12H17V20H15V12Z' fill='%23707070'/%3E%3C/svg%3E%0A");
+          background-repeat: no-repeat;
+          background-position: center;
+          display: flex;
+        }
+      }
+    }
   }
 }

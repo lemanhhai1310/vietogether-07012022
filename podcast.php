@@ -119,10 +119,47 @@
                 <h4 class="uk-h4 home__section__title3">Nghe Gì Hôm Nay</h4>
             </div>
             <div class="item__40">
-
+                <div class="uk-child-width-1-3@m uk-grid-30-m uk-grid-small" uk-grid>
+                    <?php
+                    $title1 = array(
+                        'Tóm Lại Là',
+                        'Cởi Mở',
+                        'Have a Ship',
+                        'VietNam Innovators',
+                        'Nghệ Thuật',
+                        'Âm Nhạc',
+                    );
+                    for ($j=1;$j<=6;$j++):
+                    $img = 'https://picsum.photos/420/420/?random?v='.+$j;
+                    ?>
+                    <div>
+                        <div class="uk-child-width-1-2 uk-child-width-1-1@m uk-grid-small uk-grid-17-m uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-cover-container podcast__section2__box2__cover uk-border-rounded">
+                                    <img src="<?= $img ?>" alt="" uk-cover="">
+                                    <canvas width="420" height="420"></canvas>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item__16">
+                                    <h3 class="uk-h3 podcast__section2__box2__title"><a href=""><?= $title1[array_rand($title1)] ?></a></h3>
+                                </div>
+                                <div class="item__16">
+                                    <div class="item__3">
+                                        <div class="podcast__section2__box2__tap">10 Tập</div>
+                                    </div>
+                                    <div class="item__3">
+                                        <div class="podcast__section2__box2__desc">There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endfor; ?>
+                </div>
             </div>
             <div class="item__40">
-
+                <a href="" class="header__top__btn uk-button uk-button-primary" style="width: intrinsic;"><span>Xem Thêm</span></a>
             </div>
         </div>
     </div>
