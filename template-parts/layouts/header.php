@@ -49,8 +49,8 @@
             </li>
             <li><a href="">Sáng Tạo</a></li>
             <li><a href="">Trải Nghiệm</a></li>
-            <li><a href="">Video</a></li>
-            <li><a href="">Podcast</a></li>
+            <li><a href="video.php">Video</a></li>
+            <li><a href="podcast.php">Podcast</a></li>
             <li><a href="">Cafe Vietogether</a></li>
             <li><a href="tatcachude.php">Tất Cả Chủ Đề</a></li>
             <li><a href="">Vietogether Store</a></li>
@@ -163,8 +163,8 @@
                         </li>
                         <li><a href="danhmuclon.php">Sáng Tạo</a></li>
                         <li><a href="danhmuclon.php">Trải Nghiệm</a></li>
-                        <li><a href="danhmuclon.php">Video</a></li>
-                        <li><a href="danhmuclon.php">Podcast</a></li>
+                        <li><a href="video.php">Video</a></li>
+                        <li><a href="podcast.php">Podcast</a></li>
                         <li><a href="danhmuclon.php">Cafe Vietogether</a></li>
                     </ul>
 
