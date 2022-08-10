@@ -97,6 +97,12 @@
       }
     }
   }
+  $x:25;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:22;
   &__#{$x}{
     &:nth-child(n+2){

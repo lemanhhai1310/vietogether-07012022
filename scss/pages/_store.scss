@@ -1,0 +1,11 @@
+.store{
+  &__footer{
+    &__desc{
+      letter-spacing: 0.05em;
+      color: #444F68;
+      line-height: 2;
+      @extend .fz-15;
+      font-family: $font-Poppins-Regular;
+    }
+  }
+}

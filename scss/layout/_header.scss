@@ -10,6 +10,100 @@
   .uk-container{
     max-width: calc(#{$w-container} + 30px);
   }
+  &__store{
+    &__top{
+      background: #F8F8FB;
+      &__navitem{
+        min-height: 80px;
+      }
+      .uk-container{
+
+      }
+    }
+    &__bottom{
+      background: #FFFFFF;
+      min-height: 120px;
+      &__navitem{
+        min-height: 120px;
+      }
+      .uk-container{
+
+      }
+      .uk-navbar-nav{
+        >li{
+          &.uk-active{
+            >a{
+              color: #286DBF;
+              &:after{
+                right: 15px;
+              }
+            }
+          }
+          >a{
+            //@extend .header__store__bottom__navitem;
+            letter-spacing: 0.05em;
+            @extend .fz-15;
+            text-transform: inherit;
+            font-family: $font-Poppins-SemiBold;
+            color: #444444;
+            position: relative;
+            &:after{
+              content: "";
+              display: block;
+              position: absolute;
+              left: 15px;
+              right: calc(102% - 15px);
+              bottom: 20px;
+              height: 2px;
+              background-color: #286DBF;
+              transition: .3s ease-in-out;
+              transition-property: right;
+            }
+            &:hover{
+              color: #286DBF;
+              &:after{
+                right: 15px;
+              }
+            }
+
+            &[aria-expanded]{
+              position: relative;
+              padding-right: 30px;
+              &:before{
+                content: "";
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+              }
+            }
+            &[aria-expanded="false"]{
+              &:before{
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
+              }
+            }
+            &[aria-expanded="true"]{
+              color: #286DBF;
+              &:before{
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
+              }
+              &:after{
+                right: 15px;
+              }
+            }
+            &[aria-expanded] ~ .uk-navbar-dropdown{
+              //left: 15px !important;
+            }
+          }
+        }
+      }
+    }
+  }
   &__top{
     .uk-sticky-fixed &{
       display: none;
